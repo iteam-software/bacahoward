@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  repo: iteam-consulting/better-call-baca
+  branch: master
+
+media_folder: content/staff
+public_folder: /staff
+
+collections:
+  - name: 'Staff-Member'
+    label: 'Staff'
+    label_singular: 'Staff Member'
+    folder: content/staff
+    media_folder: ''
+    public_folder: ''
+    create: true
+    slug: '{{firstName}}-{{lastName}}'
+    summary: '{{firstName}} {{lastName}}'
+    fields:
+      - { name: 'firstName', label: 'First Name', widget: 'string' }
+      - { name: 'middleName', label: 'Middle Name', required: false, widget: 'string' }
+      - { name: 'lastName', label: 'Last Name', widget: 'string' }
+      - {
+          name: 'group', label: 'Group', widget: 'select',
+          options: ['Directors', 'Managers', 'Accountants', 'Office Staff'] 
+        }
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'email', label: 'Email', widget: 'string' }
+      - { name: 'phone', label: 'Phone', widget: 'string', hint: 'Number must be in the following format: (505) 555 - 5555' }
+      - { name: 'body', label: 'Staff Member Info', widget: 'markdown', required: false, hint: 'Say something about this staff member' }
+      - { name: 'photo', label: 'Photo', required: false, widget: 'image' }
+      - label: 'credentials'
+        name: 'credentials'
+        widget: 'list'
+        fields: 
+          - { label: 'credential', name: 'credential', required: false, widget: string }
+      - label: 'Affiliations'
+        name: 'affiliations'
+        widget: 'list'
+        fields: 
+          - { label: 'affiliation', name: 'affiliation', required: false, widget: string }
+
+  - name: 'Practice-Areas'
+    label: 'Practice Areas'
+    label_singular: 'Practice Area List'
+    folder: content/practice-areas
+    media_folder: ''
+    public_folder: ''
+    slug: 'Practice Areas'
+    create: false
+    summary: 'Baca and Howard Practice Areas'
+    fields:
+      - label: 'Practice Areas'
+        label_singular: 'Practice Area'
+        name: 'Practice Area'
+        widget: 'list'
+        valueField: 
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'content', label: 'Content', widget: 'text' }

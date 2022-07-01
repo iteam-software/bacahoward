@@ -1,0 +1,45 @@
+
+.practice-areas {
+  .practice-area {
+    padding: $container-spacing 0;
+    border-bottom: $border;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    p {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    @media ($gt-md) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+
+      h2 {
+        display: inline-block;
+        margin: 0;
+        flex: 1 0 0px;
+      }
+
+      p {
+        margin: 0 0 0 $content-spacing;
+      }
+    }
+  }
+
+  .splash {
+    @extend %splash;
+
+    img {
+      object-position: 100% 100% !important; // to override Gatsby's default positioning
+    }
+  }
+}

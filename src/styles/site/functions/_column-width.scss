@@ -1,0 +1,5 @@
+@function column-width($width, $columns) {
+  $content-width: $width - ($container-spacing * 2);
+  $column-space: $content-spacing * ($columns - 1);
+  @return ($content-width - $column-space) / $columns;
+}

@@ -1,0 +1,89 @@
+.firm {
+  .employees {
+    display: flex;
+    flex-flow: row wrap;
+    margin: -($content-spacing / 2) 0;
+
+    .employee {
+      $pad: 12px;
+      @extend %card;
+      display: flex;
+      flex-flow: row nowrap;
+      margin: ($content-spacing / 2) 0;
+      padding: ($pad * .75) $pad;
+      width: 100%;
+
+      .thumbnail {
+        background-color: $gradient-dark;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        height: 64px;
+        width: 64px;
+      }
+
+      .info {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 0px;
+        justify-content: center;
+        padding-left: $pad;
+        
+        .name {
+          font-weight: 600;
+        }
+
+        .title {
+          color: hsla(0, 0, 59%, 72%);
+        }
+      }
+
+      @media ($sm) {
+        // 2 columns
+        max-width: column-width($container-max-width-sm, 2);
+        margin-right: $content-spacing;
+
+        &:nth-child(2n) {
+          margin-right: 0; // remove margin on right-most card
+        }
+      }
+
+      @media ($md) {
+        // 3 columns
+        max-width: column-width($container-max-width-md, 3);
+        margin-right: $content-spacing;
+
+        &:nth-child(3n) {
+          margin-right: 0; // remove margin on right-most card
+        }
+      }
+
+      @media ($lg) {
+        // 4 columns
+        max-width: column-width($container-max-width-lg, 4);
+        margin-right: $content-spacing;
+
+        &:nth-child(4n) {
+          margin-right: 0; // remove margin on right-most card
+        }
+      }
+
+      @media ($xl) {
+        // 4 columns
+        max-width: column-width($container-max-width-xl, 4);
+        margin-right: $content-spacing;
+
+        &:nth-child(4n) {
+          margin-right: 0; // remove margin on right-most card
+        }
+      }
+    }
+  }
+
+  .splash {
+    @extend %splash;
+    img {
+      object-position: 100% 20% !important; // to override Gatsby's default positioning
+    }
+  }
+}

@@ -1,0 +1,43 @@
+$font-size-base: 16px;
+
+// ---------- Colors ----------
+$white: hsla(0, 0%, 100%, 0.87);
+$black: hsla(0, 0%, 0%, 0.87);
+$brand: hsl(190, 14%, 35%);
+$accent: hsl(32, 35%, 79%);
+$gradient-dark: hsl(218, 15%, 90%);
+$gradient-light: hsl(218, 15%, 98%);
+
+// ---------- Border ----------
+$border: 1px solid hsla(189, 14, 35, 0.16);
+
+// ---------- Fonts ----------
+$header-font: 'Engravers Gothic', sans-serif;
+$font: 'Open Sans', sans-serif;
+
+// ---------- Spacing ----------
+$section-spacing: 32px;
+$container-spacing: 32px;
+$content-spacing: 16px;
+
+// ---------- Header ----------
+$header-height: 80px;
+
+// ---------- Container ----------
+$container-max-width-sm: 600px;
+$container-max-width-md: 960px;
+$container-max-width-lg: 1280px;
+$container-max-width-xl: 1400px;
+
+// ---------- Media Queries ----------
+// Use like this:
+//     @media ($xs) { . . . }
+$xs: unquote('max-width: 599px');
+$gt-xs: unquote('min-width: 600px');
+$sm: unquote('min-width: 600px) and (max-width: 959px');
+$gt-sm: unquote('min-width: 960px');
+$md: unquote('min-width: 960px) and (max-width: 1279px');
+$gt-md: unquote('min-width: 1280px');
+$lg: unquote('min-width: 1280px) and (max-width: 1919px');
+$gt-lg: unquote('min-width: 1920px');
+$xl: unquote('min-width: 1920px');

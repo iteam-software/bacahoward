@@ -1,0 +1,83 @@
+.profile {
+  section {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media ($gt-sm) {
+      flex-flow: row nowrap;
+    }
+
+    .portrait {
+      align-self: center;
+      display: inline-block;
+      line-height: 0;
+      margin-bottom: $content-spacing;
+      max-width: 300px;
+      width: 100%;
+
+      .image {
+        background-color: $gradient-dark;
+        background-position: center;
+        background-size: cover;
+        border-radius: 3px;
+        display: inline-block;
+        height: 0;
+        padding-top: 150%;
+        width: 100%;
+      }
+
+      @media ($gt-sm) {
+        align-self: flex-start;
+        margin-right: $container-spacing;
+        margin-bottom: 0;
+      }
+
+      @media ($gt-md) {
+        max-width: 400px;
+      }
+    }
+
+    .info {
+      max-width: 600px;
+      width: 100%;
+
+      > * {
+        &:first-child, 
+        *:first-child {
+          margin-top: 0 !important;
+        }
+
+        &:last-child,
+        *:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .contact {
+        margin: 8px 0;
+        
+        .email {
+          border-bottom: 1px dotted $brand;
+          font-weight: bold;
+
+          &:hover {
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+      .bio {
+        margin: $container-spacing 0;
+      }
+
+      .credentials,
+      .affiliations {
+        margin: $container-spacing 0 $content-spacing;
+
+        ul {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+
+header {
+  background-color: #fff;
+  box-shadow: $whiteframe-shadow-4dp;
+  color: $black;
+  font-weight: 300;
+  height: $header-height;
+  left: 0;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out 0.2s;
+  width: 100%;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: $header-height;
+  }
+
+  .brand-logo {
+    background-image: url("/images/BandH.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 48px;
+    max-width: 256px;
+    flex: 1 0 0px;
+
+    @media ($gt-xs) {
+      background-image: url("/images/bacahoward-line.png");
+      height: 64px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .link {
+      display: flex;
+      align-items: center;
+      height: $header-height;
+      padding: 0 12px;
+      text-transform: uppercase;
+      transition: background-color ease-in-out 0.15s;
+
+      &.active {
+        background-color: fade-out($gradient-dark, .25);
+      }
+      
+      &:hover {
+        background-color: fade-out(darken($gradient-dark, 5%), .25);
+        color: $black;
+      }
+
+      @media ($gt-xs) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.transparent {
+    background-color: rgba(#000, 0.35);
+    box-shadow: none;
+    color: $white;
+
+    .container {
+      justify-content: center;
+    }
+
+    .brand-logo {
+      display: none;
+    }
+
+    .link {
+      padding: 0 32px;
+    }
+  }
+}
