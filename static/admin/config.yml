@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
-  repo: iteam-consulting/better-call-baca
-  branch: master
+  repo: iteam-software/bacahoward
 
 media_folder: content/staff
 public_folder: /staff
