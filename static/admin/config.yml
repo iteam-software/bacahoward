@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: iteam-software/bacahoward
+  branch: main
 
 media_folder: content/staff
 public_folder: /staff
