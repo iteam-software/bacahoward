@@ -3,6 +3,6 @@ firstName: Annalise
 lastName: McGuire-Fender
 group: Accountants
 title: Accountant
-email: Annalise.McGuire-Fender@BacaHoward.com
+email: annalise.mcguire-fender@bacahoward.com
 phone: (505) 200-3800
 ---
