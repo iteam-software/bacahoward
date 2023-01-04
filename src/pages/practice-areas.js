@@ -49,14 +49,15 @@ export default () => {
             <h1>Practice Areas</h1>
             <section className="card">
               {
-                Practice_Area.map(item => {
-                  return(
-                    <PracticeAreaCard 
-                      title={item.title} 
-                      content={item.content}
-                    />
-                  )
-                })
+                Practice_Area && Practice_Area.map(item => (
+                  <PracticeAreaCard 
+                    title={item.title} 
+                    content={item.content}
+                  />
+                ))
+              }
+              {
+                Practice_Area || (<em>There are no practice areas.</em>)
               }
             </section>
           </div>
