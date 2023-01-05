@@ -1,10 +1,10 @@
 import React from 'react'
 
-const PracticeAreaCard = (props) => {
+const PracticeAreaCard = ({title, content}) => {
   return (
     <div className="practice-area">
-      <h2 className="title">{props.title}</h2>
-      <p>{props.content}</p>
+      <h2 className="title">{title}</h2>
+      <p>{content}</p>
     </div>
   )
 }

@@ -1,22 +1,27 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import PracticeAreaCard from '../components/PracticeAreaCard'
-import '../styles/site.scss'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from "react"
+import Layout from "../components/Layout"
+import SEO from "../components/seo"
+import PracticeAreaCard from "../components/PracticeAreaCard"
+import "../styles/site.scss"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 export default () => {
   const data = useStaticQuery(graphql`
     query SplashBuildingOutside {
-      file(relativePath: {eq: "images/david-nufer/8.jpg"}) {
+      file(relativePath: { eq: "images/david-nufer/8.jpg" }) {
         childImageSharp {
           fluid(jpegQuality: 100, maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      markdownRemark {
+      markdownRemark(
+        fields: {
+          slug: { eq: "/practice-areas/Baca and Howard Practice Areas/" }
+        }
+      ) {
+        id
         frontmatter {
           Practice_Area {
             content
@@ -25,20 +30,17 @@ export default () => {
         }
       }
     }
-  `);
+  `)
 
   const {
-    file:{
-      childImageSharp:{
-        fluid
-      }
+    file: {
+      childImageSharp: { fluid },
     },
-    markdownRemark:{
-      frontmatter:{
-        Practice_Area
-      }
-    }
-  } = data;
+    markdownRemark: {
+      id,
+      frontmatter: { Practice_Area: practiceAreas },
+    },
+  } = data
 
   return (
     <>
@@ -48,22 +50,22 @@ export default () => {
           <div className="container">
             <h1>Practice Areas</h1>
             <section className="card">
-              {
-                Practice_Area && Practice_Area.map(item => (
-                  <PracticeAreaCard 
-                    title={item.title} 
-                    content={item.content}
-                  />
-                ))
-              }
-              {
-                Practice_Area || (<em>There are no practice areas.</em>)
-              }
+              {practiceAreas.map(pa => (
+                <PracticeAreaCard
+                  key={`${id}-${pa.title}`}
+                  title={pa.title}
+                  content={pa.content}
+                />
+              ))}
             </section>
           </div>
-          <Img fluid={fluid} className="splash" alt="Baca &amp; Howard Building - Outside" />
+          <Img
+            fluid={fluid}
+            className="splash"
+            alt="Baca &amp; Howard Building - Outside"
+          />
         </Layout>
-      </div> 
+      </div>
     </>
   )
 }
