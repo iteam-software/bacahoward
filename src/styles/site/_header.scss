@@ -36,7 +36,27 @@ header {
       height: 64px;
     }
   }
+  
+  .button{
+    display: flex;
+    align-items: center;
+    //background-color: gray;
+    padding: 0 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color ease-in-out 0.15s;
+    
 
+    &:hover {
+      background-color: fade-out(darken($gradient-dark, 5%), .25);
+      color: $black;
+    }
+
+    @media ($gt-xs) {
+      font-size: 18px;
+    }
+  }
+  
   .links {
     display: flex;
     flex-flow: row nowrap;
