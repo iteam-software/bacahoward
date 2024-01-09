@@ -12,7 +12,7 @@ export default function Header(props) {
           <Link to="/firm" className="link" activeClassName="active" >Firm</Link>
           <Link to="/practice-areas" className="link" activeClassName="active" >Practice Areas</Link>
           <Link to="/careers" className="link" activeClassName="active" >Careers</Link>
-          <a className="button" target="_blank" rel="noopener noreferrer" href="https://stats.slimcd.com/soft/multisession.asp?sessionid=7EC058719423C4257C49D1D5569B301146D111C6">
+          <a className="button" type="submit" target="_blank" rel="noopener noreferrer" href="https://stats.slimcd.com/soft/multisession.asp?sessionid=7EC058719423C4257C49D1D5569B301146D111C6">
             Pay Online
           </a>
         </span>
