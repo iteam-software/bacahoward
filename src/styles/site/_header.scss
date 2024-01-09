@@ -40,16 +40,16 @@ header {
   .button{
     display: flex;
     align-items: center;
-    //background-color: gray;
+    color: white;
+    background-color: lightblue;
     padding: 0 12px;
     text-transform: uppercase;
     border-radius: 10px;
     transition: background-color ease-in-out 0.15s;
-    
+    cursor: pointer;
 
     &:hover {
-      background-color: fade-out(darken($gradient-dark, 5%), .25);
-      color: $black;
+      background-color: blue;
     }
 
     @media ($gt-xs) {
