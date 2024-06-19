@@ -1,8 +1,8 @@
 ---
 firstName: Jennifer
 lastName: Coffin
-group: Accountants
-title: Accountant
+group: Managers
+title: Senior Staff
 email: jennifer.coffin@bacahoward.com
 phone: (505) 200-3800
 ---
