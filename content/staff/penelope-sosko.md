@@ -1,6 +1,6 @@
 ---
 firstName: Penelope
-middleName: L.
+middleName: ""
 lastName: Sosko
 group: Managers
 title: CPA, Manager
