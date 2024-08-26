@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query SplashBuildingOutside {
-      file(relativePath: { eq: "images/david-nufer/8.jpg" }) {
+      file(relativePath: { eq: "images/david-nufer/8.web.jpg" }) {
         childImageSharp {
           fluid(jpegQuality: 100, maxWidth: 2000) {
             ...GatsbyImageSharpFluid
