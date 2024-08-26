@@ -21,8 +21,8 @@ Practice Area:
       sales, and allocation of purchase price.
   - title: LITIGATION SUPPORT
     content: We provide services to legal counsel regarding contract disputes,
-      damage studies, marital dissolution, partner or shareholder disputes,
-      personal injury, wrongful death, and numerous other areas.
+      damage studies, partner or shareholder disputes, personal injury, wrongful
+      death, and numerous other areas.
   - title: CONSULTING
     content: We consult with our clients regarding succession planning, mergers and
       acquisitions, choice of legal entity, estate planning, budgeting, cash
