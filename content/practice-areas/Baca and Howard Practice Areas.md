@@ -2,9 +2,9 @@
 Practice Area:
   - title: ATTEST SERVICES
     content: We prepare Audited and Reviewed financial statements in various
-      industries including Manufacturing, Distributing, Wholesale, Retail,
-      Construction, and Non Profit Organizations. We also assist clients with
-      studies of internal controls, budgeting, and financial forecasting.
+      industries including Manufacturing, Distributing, Wholesale, Retail, and
+      Construction. We also assist clients with studies of internal controls,
+      budgeting, and financial forecasting.
   - title: TAX SERVICES
     content: We prepare tax returns, perform tax planning, and represent clients
       before the Internal Revenue Service and other taxing authorities for
