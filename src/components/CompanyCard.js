@@ -6,7 +6,7 @@ import logo from "../images/bacahoward-logo.png"
 const CompanyCard = () => {
   const data = useStaticQuery(graphql`
     query Monument {
-      file(relativePath: {eq: "images/david-nufer/5.jpg"}) {
+      file(relativePath: {eq: "images/david-nufer/5.web.jpg"}) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
