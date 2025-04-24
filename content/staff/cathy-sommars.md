@@ -1,6 +1,6 @@
 ---
 firstName: Cathy
-middleName: E
+middleName: ""
 lastName: Sommars
 group: Accountants
 title: Accountant
