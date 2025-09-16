@@ -1,6 +1,6 @@
 ---
 firstName: Sarah
-middleName: E
+middleName: ""
 lastName: Riviere
 group: Accountants
 title: Accountant
