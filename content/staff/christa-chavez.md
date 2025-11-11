@@ -1,6 +1,6 @@
 ---
 firstName: Christa
-middleName: R
+middleName: ""
 lastName: Chavez
 group: Office Staff
 title: Administrative Assistant
