@@ -1,7 +1,7 @@
 ---
 Practice Area:
   - title: ATTEST SERVICES
-    content: We prepare Audited and Reviewed financial statements in various
+    content: We prepare Compiled and Reviewed financial statements in various
       industries including Manufacturing, Distributing, Wholesale, Retail, and
       Construction. We also assist clients with studies of internal controls,
       budgeting, and financial forecasting.
@@ -17,12 +17,8 @@ Practice Area:
       internal controls, budgeting, and financial forecasting.
   - title: BUSINESS VALUATION SERVICES
     content: We perform business valuation work for a number of purposes including
-      litigation, estate planning, estate and gift compliance, purchases and
-      sales, and allocation of purchase price.
-  - title: LITIGATION SUPPORT
-    content: We provide services to legal counsel regarding contract disputes,
-      damage studies, partner or shareholder disputes, personal injury, wrongful
-      death, and numerous other areas.
+      estate planning, estate and gift compliance, purchases and sales, and
+      allocation of purchase price.
   - title: CONSULTING
     content: We consult with our clients regarding succession planning, mergers and
       acquisitions, choice of legal entity, estate planning, budgeting, cash
