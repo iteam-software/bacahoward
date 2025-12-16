@@ -1,6 +1,6 @@
 ---
 firstName: Patsy
-middleName: L
+middleName: ""
 lastName: Melton
 group: Managers
 title: CPA
