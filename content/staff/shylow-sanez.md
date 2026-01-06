@@ -1,6 +1,6 @@
 ---
 firstName: Shylow
-lastName: Sanez
+lastName: Saenz
 group: Accountants
 title: Accountant
 email: shylow.saenz@bacahoward.com
