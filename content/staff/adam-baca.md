@@ -6,7 +6,7 @@ group: Directors
 title: CPA/ABV, CVA
 email: adam.baca@bacahoward.com
 phone: (505) 2003800
-photo: adam-baca.jpg
+photo: dsc_5775.jpg
 credentials:
   - credential: Bachelor of Accountancy, Baylor University, 2005
   - credential: Master’s in Taxation, Baylor University, 2005
