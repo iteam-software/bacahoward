@@ -5,5 +5,5 @@ group: Managers
 title: CPA, CVA, Senior Manager
 email: eric.myre@bacahoward.com
 phone: (505) 200 – 3800
-photo: eric-myre.jpg
+photo: eric_5868.jpg
 ---
