@@ -5,4 +5,5 @@ group: Managers
 title: Manager
 email: jennifer.coffin@bacahoward.com
 phone: (505) 200-3800
+photo: dsc_5933.jpg
 ---
