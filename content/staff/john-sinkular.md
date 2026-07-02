@@ -1,6 +1,6 @@
 ---
 firstName: John
-middleName: ""
+middleName: K.
 lastName: Sinkular
 group: Accountants
 title: CPA, Accountant
